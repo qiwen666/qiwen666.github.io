@@ -1,0 +1,31 @@
+.img-wrapper {
+    width: 100%;
+    height: 357px;
+    overflow: hidden;
+    transition: .3s;
+}
+.img-wrapper:hover img{
+    transform: scale(1.1);
+}
+.img-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.text {
+    margin: 0 20px;
+    margin-top: -30px;
+    background-color: var(--black);
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+}
