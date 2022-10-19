@@ -1,0 +1,9 @@
+.card {
+    margin-bottom: 100px;
+}
+.card h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--general);
+    margin-bottom: 28px;
+}

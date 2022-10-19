@@ -1,0 +1,55 @@
+/* banner样式 */
+.banner {
+    height: 528px;
+    background: url('https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    color: var(--white);
+}
+
+.banner-desc h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.banner p {
+    font-size: 22px;
+}
+
+/* about样式 */
+.about {
+    margin: 74px 0;
+}
+
+/* 公司简介 */
+about-card .paragraph p {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+about-card .paragraph p:last-child {
+    margin-bottom: 0;
+}
+/* 联系我们 */
+about-card .contact {
+    display: flex;
+}
+
+about-card .contact .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+about-card .contact .column span.mixin {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,241 @@
+.sence {
+    height: 626px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sence h3 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--general);
+    font-weight: 500;
+    margin-bottom: 74px;
+}
+
+.sence .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sence .row .column {
+    width: calc((100% - 88px) / 3);
+    margin-right: 44px;
+    padding: 16px 16px 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.18);
+    border-radius: 4px;
+}
+
+.sence .row .column:nth-child(3n) {
+    margin-right: 0;
+}
+
+sence-card {
+    width: calc((100% - 88px) / 3);
+    margin-right: 44px;
+    padding: 16px 16px 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.18);
+    border-radius: 4px;
+}
+sence-card:nth-child(3n) {
+    margin-right: 0;
+}
+.column .img-wrapper {
+    width: 100%;
+    height: 270px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.column .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column span {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.resolution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 670px;
+
+}
+
+/* 解决方案 */
+.resolution h3 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--general);
+    font-weight: 500;
+    margin-bottom: 74px;
+}
+
+.resolution .img-wrapper {
+    width: 100%;
+    height: 416px;
+}
+
+.resolution .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 方案优势 */
+.program {
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.program h3 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--general);
+    font-weight: 500;
+    margin-bottom: 74px;
+}
+
+.program-options {
+    display: flex;
+    justify-content: center;
+}
+
+.program-options .option {
+    width: 128px;
+    height: 128px;
+    margin-right: 88px;
+    text-align: center;
+    box-shadow: 0px 0px 6px 1px rgba(25, 113, 232, 0.2);
+    background: var(--white);
+    border-radius: 4px;
+}
+
+.program-options .option:last-child {
+    margin-right: 0;
+}
+program-card {
+    width: 128px;
+    padding: 16px 0;
+    margin-right: 88px;
+    text-align: center;
+    box-shadow: 0px 0px 6px 1px rgba(25, 113, 232, 0.2);
+    background: var(--white);
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+program-card:last-child {
+    margin-right: 0;
+}
+
+program-card:hover {
+    transform: translateY(-20px);
+    background-color: var(--primary);
+    box-shadow: 0 10px 30px rgb(57 108 240 / 50%);
+}
+program-card:hover::part(label) {
+    color: var(--white);
+}
+program-card:hover::part(icon) {
+    color: var(--white);
+}
+
+/* 应用场景 */
+.application {
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--lighter);
+}
+
+.application h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--general);
+    margin-bottom: 74px;
+}
+
+.application .application-items {
+    display: flex;
+}
+
+.application-items .item {
+    width: calc((100% - 32px) / 2);
+    margin-right: 32px;
+    height: 416px;
+    overflow: hidden;
+    position: relative;
+}
+
+.application-items .item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.item .img-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.item .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item .mask {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.item:hover .mask {
+    opacity: 1;
+    left: 0;
+}
+.item:hover application-card::part(mask) {
+    opacity: 1;
+    left: 0;
+}
+.part {
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--lighter);
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.part span::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: var(--primary);
+    vertical-align: middle;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,16 @@
+{
+  "id": "3700372",
+  "name": "website",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24342306",
+      "name": "safety officer-line",
+      "font_class": "a-safetyofficer-line",
+      "unicode": "ea19",
+      "unicode_decimal": 59929
+    }
+  ]
+}
